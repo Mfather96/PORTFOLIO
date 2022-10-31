@@ -1,0 +1,61 @@
+.projects-page{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.card-block{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	width: 100%;
+}
+
+.card-link {
+	display: block;
+	cursor: pointer;
+	max-width: 200px;
+	box-shadow: 0px 3px 15px rgba(0,0,0, 0.5);
+	transition: all ease 0.2s;
+	margin: 10px;
+	animation-name: hoisting;
+	animation-duration: 0.5s;
+}
+
+.card-img{
+	width: 200px; 
+	height: 200px;
+	object-fit: cover;
+	object-position: 50% 0%;
+	/* margin-bottom: 10px; */
+}
+.card-title {
+	text-align: center;
+	margin-bottom: 15px;
+	font-size: 20px;
+	border-bottom: 1px solid #555;
+	padding: 5px;
+	font-family: 'PT sans';
+	font-weight: 700;
+	line-height: 30px;
+}
+.card-text {
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 15px;	
+}
+.card-link:hover{
+	box-shadow: 0 0 15px rgb(25, 48, 90);
+}	
+
+@keyframes hoisting {
+	0%{
+		transform: scale(0);
+	}
+	75%{
+		transform: scale(1.05);
+	}
+	100%{
+		transform: scale(1);
+	}
+}

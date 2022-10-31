@@ -1,0 +1,30 @@
+.contacts-column{
+	margin: 40px;
+}
+.contacts-column p{
+	margin-bottom: 15px;
+	font-size: 25px;
+	color: #333;
+}
+.contacts-column a{
+	text-shadow: 0 0 3px rgba(0, 119, 255, 0.4);
+	transition: all ease 0.1s;
+}
+.contacts-column a:hover{
+	color: rgb(0, 119, 255);
+}
+.contacts-column .mail span{
+	color: darksalmon;
+}
+@media(max-width: 767px){
+	.contacts-column p{
+		text-align: center;
+		line-height:35px;
+	}
+}
+@media(max-width: 400px){
+	.contacts-column p{
+		line-height:28px;
+		font-size: 19px;
+	}
+}
